@@ -1,0 +1,17 @@
+.FooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgba(154, 154, 154, 0.079);
+}
+
+.FooterContainer img {
+  height: 30em;
+}
+
+.FooterContainer div {
+  width: 230px;
+  padding-left: 1em;
+  line-height: 1.3em;
+}

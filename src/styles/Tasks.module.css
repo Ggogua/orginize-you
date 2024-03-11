@@ -1,0 +1,331 @@
+.TasksContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 120vh;
+}
+
+.LeftSide {
+  height: 120vh;
+  border-right: 1px solid grey;
+}
+
+.LogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.LogoDiv img {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.CalendarContainer {
+  margin-top: 0.5em;
+}
+
+.TaskCountBody {
+  display: flex;
+  margin-top: 0.5em;
+  gap: 12em;
+  font-size: 16px;
+  background-color: #e5e5e5;
+  padding: 1em;
+}
+
+.TaskCount {
+  padding: 1em;
+}
+
+.TaskCountTitle {
+  color: #343a40;
+  font-weight: 700;
+}
+
+.IconSide {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+  margin-top: 1em;
+  color: #495057;
+  font-size: 18px;
+  gap: 1em;
+}
+
+.IconSide .icon {
+  cursor: pointer;
+}
+
+.Today {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 1em;
+  font-weight: 600;
+  margin-bottom: -30px;
+}
+
+.TaskBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.TaskBody img {
+  height: 15em;
+}
+
+.TaskBody p {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.TaskFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 3em;
+  margin-top: 1em;
+}
+
+.PlusBackground {
+  background-color: #f8f9fa;
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.CustomCalendar {
+  border: none;
+}
+
+.TaskInput {
+  width: 20em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.InputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.InputDiv input {
+  border: none;
+  outline: none;
+  padding: 1em;
+  background-color: rgba(128, 128, 128, 0.059);
+}
+
+.InputWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.Colors {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.Colors p {
+  color: #1e1c1cd8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ColorPalette {
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  margin-top: 1em;
+  display: flex;
+  cursor: pointer;
+  border: 2px solid #edeaea;
+}
+
+.PaletteDiv {
+  display: flex;
+  gap: 1em;
+}
+
+.CardColorWrapper {
+  display: flex;
+}
+
+.TasksFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2em;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.RepeatButtons,
+.TagSection {
+  display: flex;
+  align-items: center;
+}
+
+.RepeatButtons button {
+  border: none;
+  padding: 1em;
+  width: 120px;
+  cursor: pointer;
+}
+
+.RepeatButtons button:active {
+  background-color: grey;
+}
+
+.FirstBtn {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.ThirdBtn {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.Repeat {
+  color: #1e1c1cb2;
+  font-weight: 700;
+}
+
+.TwoSections {
+  display: flex;
+  align-items: center;
+}
+
+.TagSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1em;
+  margin-top: 5px;
+}
+
+.TagInput {
+  width: 15em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.AddTagBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Task {
+  width: 90%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.Task:hover {
+  background-color: #f9f9f9;
+}
+
+.TaskContent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 20em;
+}
+
+.TaskContent h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.TaskContent p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.CompleteButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.CompleteButton:hover {
+  background-color: #45a049;
+}
+
+.AddTaskBtn {
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+  background: #45a049;
+  color: #fff;
+  border-radius: 12px;
+  transition: all 0.15s;
+}
+
+.AddTaskBtn:hover {
+  background: #348738;
+}
+
+.AddTaskBtn:active {
+  background: #45a049;
+}
+
+.SelectedColor {
+  border: 2px solid black;
+}
+
+.RepeatTagInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.RepeatInfo,
+.TagInfo {
+  font-size: 12px;
+  color: #888;
+}
+
+.TagInfo {
+  margin-left: 8px;
+}
+
+.TasksContainer.DarkMode {
+  background-color: #282c36;
+  color: #ffffff;
+}
+
+.TasksContainer.DarkMode .IconSide {
+  color: white;
+}
+
+.TasksContainer.DarkMode .twoIcons {
+  color: black;
+}
